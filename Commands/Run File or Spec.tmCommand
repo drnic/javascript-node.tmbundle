@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env node
+
+var sys = require("sys");
+if(process.ENV.TM_FILENAME.match(/spec\.(.*)\.js/)) {
+  var expressPath = process.ENV.TM_BUNDLE_SUPPORT + "/vendor/express/";
+  require.paths.unshift(expressPath + 'spec/lib', expressPath + 'lib');
+  require("jspec");
+  require("express");
+  require("express/spec");
+
+  quit = process.exit;
+  print = puts;
+
+  readFile = function(path) {
+    var promise = require('posix').cat(path, "utf8");
+    var result = '';
+    promise.addErrback(function(){ throw "failed to read file `" + path + "'" });
+    promise.addCallback(function(contents){
+      result = contents;
+    });
+    promise.wait();
+    return result;
+  };
+  
+  GLOBAL.console = {
+    log: sys.puts,
+    warn: sys.puts,
+    error: sys.puts,
+    group: function(){},
+    groupEnd: function(){}
+  };
+  JSpec.exec(process.ENV.TM_FILEPATH);
+  JSpec.run({ formatter: JSpec.formatters.Console, failuresOnly: true });
+  JSpec.report();
+
+} else {
+  sys.puts("normal file");
+}
+</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>@r</string>
+	<key>name</key>
+	<string>Run File or Spec</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.js.node.express</string>
+	<key>uuid</key>
+	<string>5ECAB6F6-77CD-4A15-A646-BE4B01B3944F</string>
+</dict>
+</plist>

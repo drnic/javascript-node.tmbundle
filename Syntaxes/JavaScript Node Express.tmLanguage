@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>comment</key>
+	<string>Sinatra-like JavaScript web development framework built on node.js; Bundle started by Dr Nic Williams</string>
+	<key>foldingStartMarker</key>
+	<string>(^.*{[^}]*$|^.*\([^\)]*$|^.*/\*(?!.*\*/).*$)</string>
+	<key>foldingStopMarker</key>
+	<string>(^\s*\}|^\s*\)|^(?!.*/\*).*\*/)</string>
+	<key>keyEquivalent</key>
+	<string>^~E</string>
+	<key>name</key>
+	<string>JavaScript Node Express</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>source.js</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.js.node.express</string>
+	<key>uuid</key>
+	<string>17076F45-FE22-4123-AD00-0C8E31BC2EB8</string>
+</dict>
+</plist>
