@@ -13,6 +13,7 @@ Important: Change your current grammar to "JavaScript Node" (short cut: Shift+Ct
   * error - sys.error('string');
   * exec - sys.exec('command').addCallback(...);
 * process snippets
+  * .lis - .addListener(...)
   * .cb - .addCallback(...)
   * .errb - .addErrback(...)
   * .canb - .addCancalback(...)
