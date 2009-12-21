@@ -6,17 +6,19 @@ Important: Change your current grammar to "JavaScript Node" (short cut: Shift+Ct
 
 * Cmd+R - run current file within node
 * req => var sys = require('sys');
-* sys.js snippets:
-  * puts - sys.puts('string');
-  * p - sys.p('string');
-  * debug - sys.debug('string');
-  * error - sys.error('string');
-  * exec - sys.exec('command').addCallback(...);
 * process snippets
   * .lis - .addListener(...)
   * .cb - .addCallback(...)
   * .errb - .addErrback(...)
   * .canb - .addCancalback(...)
+* sys module:
+  * puts - sys.puts('string');
+  * p - sys.p('string');
+  * debug - sys.debug('string');
+  * error - sys.error('string');
+  * exec - sys.exec('command').addCallback(...);
+* posix module:
+  * cat, mkdir, readdir, rename, rmdir, stat
 
 ## Installation
 
