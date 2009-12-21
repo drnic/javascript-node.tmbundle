@@ -3,16 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>sys.exec(${1:'${2:ls -al}'})${5:.addCallback(function (stdout, stderr) {
-  $0
-\})};</string>
+	<string>posix.stat(${1:'${2:path}'}).addCallback(function(stats) {
+	${10:sys.puts("stats: " + JSON.stringify(stats));}$0
+});
+</string>
 	<key>name</key>
-	<string>exec</string>
+	<string>stat</string>
 	<key>scope</key>
 	<string>source.js.node</string>
 	<key>tabTrigger</key>
-	<string>exec</string>
+	<string>stat</string>
 	<key>uuid</key>
-	<string>C215A7E3-0F51-4671-99C8-D79DA19D9B02</string>
+	<string>F430F77A-4D98-4D2D-B816-87B963A61717</string>
 </dict>
 </plist>

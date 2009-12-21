@@ -3,16 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>sys.exec(${1:'${2:ls -al}'})${5:.addCallback(function (stdout, stderr) {
-  $0
-\})};</string>
+	<string>posix.rename(${1:'${2:from}'}, ${3:'${4:to}'})${5:.addCallback(function() {
+	$0
+\})};
+</string>
 	<key>name</key>
-	<string>exec</string>
+	<string>rename</string>
 	<key>scope</key>
 	<string>source.js.node</string>
 	<key>tabTrigger</key>
-	<string>exec</string>
+	<string>ren</string>
 	<key>uuid</key>
-	<string>C215A7E3-0F51-4671-99C8-D79DA19D9B02</string>
+	<string>0D22ED48-FA6C-4B12-ADE8-9A40A556DFCA</string>
 </dict>
 </plist>
