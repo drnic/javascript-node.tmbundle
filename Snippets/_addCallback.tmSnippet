@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>.addCallback(function(${1:e}) {
+  $0
+});</string>
+	<key>name</key>
+	<string>.addCallback</string>
+	<key>scope</key>
+	<string>source.js.node</string>
+	<key>tabTrigger</key>
+	<string>.cb</string>
+	<key>uuid</key>
+	<string>9D08A939-64FB-42F6-BE49-774D1BFB3954</string>
+</dict>
+</plist>

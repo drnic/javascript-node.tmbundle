@@ -12,6 +12,10 @@ Important: Change your current grammar to "JavaScript Node" (short cut: Shift+Ct
   * debug - sys.debug('string');
   * error - sys.error('string');
   * exec - sys.exec('command').addCallback(...);
+* process snippets
+  * .cb - .addCallback(...)
+  * .errb - .addErrback(...)
+  * .canb - .addCancalback(...)
 
 ## Installation
 
