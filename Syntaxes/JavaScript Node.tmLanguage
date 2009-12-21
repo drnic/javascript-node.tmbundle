@@ -9,7 +9,7 @@
 	<key>foldingStopMarker</key>
 	<string>(^\s*\}|^\s*\)|^(?!.*/\*).*\*/)</string>
 	<key>keyEquivalent</key>
-	<string>^~E</string>
+	<string>^~N</string>
 	<key>name</key>
 	<string>JavaScript Node</string>
 	<key>patterns</key>
