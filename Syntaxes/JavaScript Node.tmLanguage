@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>comment</key>
-	<string>Sinatra-like JavaScript web development framework built on node.js; Bundle started by Dr Nic Williams</string>
+	<string>node.js</string>
 	<key>foldingStartMarker</key>
 	<string>(^.*{[^}]*$|^.*\([^\)]*$|^.*/\*(?!.*\*/).*$)</string>
 	<key>foldingStopMarker</key>
@@ -11,7 +11,7 @@
 	<key>keyEquivalent</key>
 	<string>^~E</string>
 	<key>name</key>
-	<string>JavaScript Node Express</string>
+	<string>JavaScript Node</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -20,7 +20,7 @@
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.js.node.express</string>
+	<string>source.js.node</string>
 	<key>uuid</key>
 	<string>17076F45-FE22-4123-AD00-0C8E31BC2EB8</string>
 </dict>

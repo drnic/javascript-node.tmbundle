@@ -7,6 +7,8 @@
 	<key>command</key>
 	<string>#!/usr/bin/env node
 
+// NOTE: This original implementation has support for running node.js/express web application jspec test files. This will be extracted into a separate bundle + command at some stage.
+
 var sys = require("sys");
 if(process.ENV.TM_FILENAME.match(/spec\.(.*)\.js/)) {
   var expressPath = process.ENV.TM_BUNDLE_SUPPORT + "/vendor/express/";
@@ -59,7 +61,7 @@ if(process.ENV.TM_FILENAME.match(/spec\.(.*)\.js/)) {
 	<key>output</key>
 	<string>showAsTooltip</string>
 	<key>scope</key>
-	<string>source.js.node.express</string>
+	<string>source.js.node</string>
 	<key>uuid</key>
 	<string>5ECAB6F6-77CD-4A15-A646-BE4B01B3944F</string>
 </dict>
