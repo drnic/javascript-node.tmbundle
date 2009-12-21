@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>sys.error(${1:'${2:ALERT}'});</string>
+	<key>name</key>
+	<string>error</string>
+	<key>scope</key>
+	<string>source.js.node</string>
+	<key>tabTrigger</key>
+	<string>err</string>
+	<key>uuid</key>
+	<string>0DE90632-511B-4AE1-B8D0-494702E8748E</string>
+</dict>
+</plist>
