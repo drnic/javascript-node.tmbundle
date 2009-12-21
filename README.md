@@ -8,9 +8,9 @@ Important: Change your current grammar to "JavaScript Node" (short cut: Shift+Ct
 * req => var sys = require('sys');
 * sys.js snippets:
   * puts - sys.puts('string');
-  * p - sys.puts('string');
-  * debug - sys.puts('string');
-  * error - sys.puts('string');
+  * p - sys.p('string');
+  * debug - sys.debug('string');
+  * error - sys.error('string');
   * exec - sys.exec('command').addCallback(...);
 
 ## Installation
