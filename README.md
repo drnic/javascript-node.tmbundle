@@ -15,17 +15,12 @@ Important: Change your current grammar to "JavaScript Node" (short cut: Shift+Ct
 
 ## Installation
 
-<pre>
-mkdir -p ~/Library/Application\ Support/TextMate/Bundles/
-cd ~/Library/Application\ Support/TextMate/Bundles
-git clone git://github.com/drnic/javascript-node.tmbundle.git "JavaScript Node.tmbundle"
-osascript -e 'tell app "TextMate" to reload bundles'
-</pre>
+    mkdir -p ~/Library/Application\ Support/TextMate/Bundles/
+    cd ~/Library/Application\ Support/TextMate/Bundles
+    git clone git://github.com/drnic/javascript-node.tmbundle.git "JavaScript Node.tmbundle"
+    osascript -e 'tell app "TextMate" to reload bundles'
 
-* In TextMate: From your drop down menu, select Bundles -> Bundle Editor -> Reload Bundles.
-* To install the color themes for the syntax highlighting:
-** Click on the themes found in the color_themes dir by clicking on them in Finder.
-
+Alternately, in TextMate, from your drop down menu, select Bundles -> Bundle Editor -> Reload Bundles.
 
 ## Credits
 
