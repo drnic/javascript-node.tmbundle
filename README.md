@@ -33,6 +33,8 @@ The Node.JS TM Bundle is currently authored by Dr Nic Williams. Contributors and
 
 * **Dr Nic** - Author/Main contributor
 
+## License
+
 Copyright (c) 2009-2010 Dr Nic Williams, Mocra
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
