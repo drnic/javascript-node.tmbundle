@@ -21,7 +21,7 @@ if(process.ENV.TM_FILENAME.match(/spec\.(.*)\.js/)) {
   readFile = function(path) {
     var promise = require('posix').cat(path, "utf8");
     var result = '';
-    promise.addErrback(function(){ throw "failed to read file `" + path + "'" });
+    promise.addErrback(function(){ throw "failed to read file `" + path + "'"; });
     promise.addCallback(function(contents){
       result = contents;
     });
@@ -41,7 +41,13 @@ if(process.ENV.TM_FILENAME.match(/spec\.(.*)\.js/)) {
   JSpec.report();
 
 } else {
-  sys.puts("normal file");
+  var script = process.createChildProcess("node", [process.ENV.TM_FILEPATH]);
+  script.addListener("output", function(data) {
+    if (data !== null) { sys.puts(data); }
+  });
+  script.addListener("error", function(data) {
+    if (data !== null) { sys.puts("ERROR: " + data); }
+  });
 }
 </string>
 	<key>input</key>
