@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>sys.exec(${1:'${2:ls -al}'}).addCallback(function (stdout, stderr) {
-  sys.puts(stdout);
-});</string>
+	<string>sys.exec(${1:'${2:ls -al}'})${5:.addCallback(function (stdout, stderr) {
+  $0
+})};</string>
 	<key>name</key>
 	<string>exec</string>
 	<key>scope</key>
