@@ -15,6 +15,12 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>match</key>
+			<string>\b(exports)\b</string>
+			<key>name</key>
+			<string>variable.language.module.js</string>
+		</dict>
+		<dict>
 			<key>include</key>
 			<string>source.js</string>
 		</dict>
