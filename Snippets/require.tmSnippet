@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>var ${2/^.*?(\w+).*$/\L$1/} = require(${2:'${1:./some_file}'});</string>
+	<string>var ${2/^.*?(\w+).*$/\L$1/} = require(${2:'${1:sys}'});</string>
 	<key>name</key>
 	<string>require</string>
 	<key>scope</key>
