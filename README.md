@@ -1,5 +1,17 @@
 # Textmate Bundle for Node.JS
 
+## Common commands and short-cuts
+
+Important: Change your current grammar to "JavaScript Node" (short cut: Shift+Ctrl+Alt+N)
+
+* Cmd+R - run current file within node
+* req => var sys = require('sys');
+* sys.js snippets:
+  * puts - sys.puts('string');
+  * p - sys.puts('string');
+  * debug - sys.puts('string');
+  * error - sys.puts('string');
+  * exec - sys.exec('command').addCallback(...);
 
 ## Installation
 
