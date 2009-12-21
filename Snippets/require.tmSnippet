@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>var ${2/^.*?(\w+).*$/\L$1/} = require(${2:'${1:./some_file}'});</string>
+	<key>name</key>
+	<string>require</string>
+	<key>scope</key>
+	<string>source.js.node</string>
+	<key>tabTrigger</key>
+	<string>req</string>
+	<key>uuid</key>
+	<string>59AF7588-E4A5-4BD4-8CF0-50EDB8068520</string>
+</dict>
+</plist>
