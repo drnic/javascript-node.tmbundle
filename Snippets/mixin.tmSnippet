@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>process.mixin(${1:exports}, {
+	$0
+});</string>
+	<key>name</key>
+	<string>mixin</string>
+	<key>scope</key>
+	<string>source.js.node</string>
+	<key>tabTrigger</key>
+	<string>mixin</string>
+	<key>uuid</key>
+	<string>E114B311-9CD7-422E-BBDB-DF8930F5C5CD</string>
+</dict>
+</plist>

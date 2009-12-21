@@ -6,6 +6,7 @@ Important: Change your current grammar to "JavaScript Node" (short cut: Shift+Ct
 
 * Cmd+R - run current file within node
 * req => var sys = require('sys');
+* mixin => process.mixin(exports, {...});
 * process snippets
   * .lis - .addListener(...)
   * .cb - .addCallback(...)
