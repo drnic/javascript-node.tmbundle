@@ -22,6 +22,10 @@ Important: Change your current grammar to "JavaScript Node" (short cut: Shift+Ct
 * posix module:
   * cat, mkdir, readdir, rename, rmdir, stat
 
+Others:
+
+* app => if (module.id == require.main.id) { .. }
+
 ## Installation
 
     mkdir -p ~/Library/Application\ Support/TextMate/Bundles/
