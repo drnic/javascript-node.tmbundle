@@ -3,19 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>beforeRunningCommand</key>
-	<string>nop</string>
+	<string>saveActiveFile</string>
 	<key>command</key>
 	<string>#!/usr/bin/env node
 
 // NOTE: This original implementation has support for running node.js/express web application jspec test files. This will be extracted into a separate bundle + command at some stage.
 
 var sys = require("sys");
-if(process.ENV.TM_FILENAME.match(/spec\.(.*)\.js/)) {
-  var expressPath = process.ENV.TM_BUNDLE_SUPPORT + "/vendor/express/";
-  require.paths.unshift(expressPath + 'spec/lib', expressPath + 'lib');
+if(process.ENV.TM_FILENAME.match(/(.*)spec\.js/)) {
+  require.paths.unshift(process.ENV.TM_BUNDLE_SUPPORT + '/spec/lib');
+  if (typeof process.ENV.TM_PROJECT_DIRECTORY != "undefined" &amp;&amp; process.ENV.TM_PROJECT_DIRECTORY != null &amp;&amp; process.ENV.TM_PROJECT_DIRECTORY != "") {
+    require.paths.unshift(process.ENV.TM_PROJECT_DIRECTORY + '/lib');
+    require.paths.unshift(process.ENV.TM_PROJECT_DIRECTORY + '/src');
+    require.paths.unshift(process.ENV.TM_PROJECT_DIRECTORY + '/spec');
+  }
   require("jspec");
-  require("express");
-  require("express/spec");
 
   quit = process.exit;
   print = puts;
