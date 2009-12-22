@@ -3,7 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>exports.${1:name} = function(${2:arguments}) {
+	<string>`#!/usr/bin/env ruby
+  if File.read(ENV['TM_FILEPATH']) =~ /^var ([\w_]*?) = exports;/m
+    print $1
+  else
+    print "exports"
+  end
+`.${2:name} = function(${3:arguments}) {
 	$0
 };</string>
 	<key>name</key>
