@@ -26,6 +26,8 @@ Others:
 
 * app => if (module.id == require.main.id) { .. }
 * cons => console.log('');
+* fun => function function_name(argument) {	// body...}
+* set => setTimeout(function, n);
 
 ## Installation
 
