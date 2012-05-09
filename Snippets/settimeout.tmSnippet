@@ -3,16 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>function ${1:function_name}(${2:argument}) {
-	${0:// body...}
-}</string>
+	<string>setTimeout(${1:function}, ${2:n});</string>
 	<key>name</key>
-	<string>function</string>
+	<string>settimeout</string>
 	<key>scope</key>
 	<string>source.js.node</string>
 	<key>tabTrigger</key>
-	<string>fun</string>
+	<string>set</string>
 	<key>uuid</key>
-	<string>F0E4FB6A-4878-48C6-A777-62438DF1E14F</string>
+	<string>1B9B9A18-2314-4FB1-ACF5-3A8A18AE9988</string>
 </dict>
 </plist>
