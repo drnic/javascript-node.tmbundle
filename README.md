@@ -25,6 +25,7 @@ Important: Change your current grammar to "JavaScript Node" (short cut: Shift+Ct
 Others:
 
 * app => if (module.id == require.main.id) { .. }
+* cons => console.log('');
 
 ## Installation
 
