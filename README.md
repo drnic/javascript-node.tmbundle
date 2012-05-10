@@ -42,10 +42,12 @@ Alternately, in TextMate, from your drop down menu, select Bundles -> Bundle Edi
 The Node.JS TM Bundle is currently authored by Dr Nic Williams. Contributors and co-maintainers are welcome.
 
 * **Dr Nic** - Author/Main contributor
+* **Jasper Lievisse Adriaanse** - Contributor
 
 ## License
 
 Copyright (c) 2009-2010 Dr Nic Williams, Mocra
+Copyright (c) 2012 Jasper Lievisse Adriaanse
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
