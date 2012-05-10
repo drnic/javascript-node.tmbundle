@@ -5,7 +5,7 @@
 Important: Change your current grammar to "JavaScript Node" (short cut: Shift+Ctrl+Alt+N)
 
 * Cmd+R - run current file within node
-* req => var sys = require('sys');
+* req => var util = require('util');
 * exp => exports.func_name = function() {...};
 * process snippets
   * .lis - .addListener(...)
