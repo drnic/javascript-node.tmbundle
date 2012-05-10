@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>process.mixin(${1:exports}, {
-	$0
-});</string>
+	<string>function ${1:function_name}(${2:argument}) {
+	${0:// body...}
+}</string>
 	<key>name</key>
-	<string>mixin</string>
+	<string>function</string>
 	<key>scope</key>
 	<string>source.js.node</string>
 	<key>tabTrigger</key>
-	<string>mixin</string>
+	<string>fun</string>
 	<key>uuid</key>
-	<string>E114B311-9CD7-422E-BBDB-DF8930F5C5CD</string>
+	<string>EBED7197-DE57-4621-836D-A1AA30BEFA89</string>
 </dict>
 </plist>

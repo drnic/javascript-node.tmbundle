@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>var ${2:${1/(?:_|-)([A-Za-z0-9]+)(?:\.js)?/(?2::\u$1)/g}} = require('${1:util}')$0;</string>
+	<string>console.log(${1:''});</string>
 	<key>name</key>
-	<string>require</string>
+	<string>cons</string>
 	<key>scope</key>
 	<string>source.js.node</string>
 	<key>tabTrigger</key>
-	<string>req</string>
+	<string>cons</string>
 	<key>uuid</key>
-	<string>59AF7588-E4A5-4BD4-8CF0-50EDB8068520</string>
+	<string>959A3067-5070-4F88-B5AB-02D266A8E381</string>
 </dict>
 </plist>

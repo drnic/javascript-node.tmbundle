@@ -5,8 +5,7 @@
 Important: Change your current grammar to "JavaScript Node" (short cut: Shift+Ctrl+Alt+N)
 
 * Cmd+R - run current file within node
-* req => var sys = require('sys');
-* mixin => process.mixin(exports, {...});
+* req => var util = require('util');
 * exp => exports.func_name = function() {...};
 * process snippets
   * .lis - .addListener(...)
@@ -25,6 +24,9 @@ Important: Change your current grammar to "JavaScript Node" (short cut: Shift+Ct
 Others:
 
 * app => if (module.id == require.main.id) { .. }
+* cons => console.log('');
+* fun => function function_name(argument) {	// body...}
+* set => setTimeout(function, n);
 
 ## Installation
 
@@ -40,10 +42,12 @@ Alternately, in TextMate, from your drop down menu, select Bundles -> Bundle Edi
 The Node.JS TM Bundle is currently authored by Dr Nic Williams. Contributors and co-maintainers are welcome.
 
 * **Dr Nic** - Author/Main contributor
+* **Jasper Lievisse Adriaanse** - Contributor
 
 ## License
 
 Copyright (c) 2009-2010 Dr Nic Williams, Mocra
+Copyright (c) 2012 Jasper Lievisse Adriaanse
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
