@@ -9,13 +9,13 @@
 
 // NOTE: This original implementation has support for running node.js/express web application jspec test files. This will be extracted into a separate bundle + command at some stage.
 
-var sys = require("sys");
-if(process.ENV.TM_FILENAME.match(/(.*)spec\.js/)) {
-  require.paths.unshift(process.ENV.TM_BUNDLE_SUPPORT + '/spec/lib');
-  if (typeof process.ENV.TM_PROJECT_DIRECTORY != "undefined" &amp;&amp; process.ENV.TM_PROJECT_DIRECTORY != null &amp;&amp; process.ENV.TM_PROJECT_DIRECTORY != "") {
-    require.paths.unshift(process.ENV.TM_PROJECT_DIRECTORY + '/lib');
-    require.paths.unshift(process.ENV.TM_PROJECT_DIRECTORY + '/src');
-    require.paths.unshift(process.ENV.TM_PROJECT_DIRECTORY + '/spec');
+var util = require("util");
+if(process.env.TM_FILENAME.match(/(.*)spec\.js/)) {
+  require.paths.unshift(process.env.TM_BUNDLE_SUPPORT + '/spec/lib');
+  if (typeof process.env.TM_PROJECT_DIRECTORY != "undefined" &amp;&amp; process.env.TM_PROJECT_DIRECTORY != null &amp;&amp; process.env.TM_PROJECT_DIRECTORY != "") {
+    require.paths.unshift(process.env.TM_PROJECT_DIRECTORY + '/lib');
+    require.paths.unshift(process.env.TM_PROJECT_DIRECTORY + '/src');
+    require.paths.unshift(process.env.TM_PROJECT_DIRECTORY + '/spec');
   }
   require("jspec");
 
@@ -34,24 +34,24 @@ if(process.ENV.TM_FILENAME.match(/(.*)spec\.js/)) {
   };
   
   GLOBAL.console = {
-    log: sys.puts,
-    warn: sys.puts,
-    error: sys.puts,
+    log: util.puts,
+    warn: util.puts,
+    error: util.puts,
     group: function(){},
     groupEnd: function(){}
   };
-  JSpec.exec(process.ENV.TM_FILEPATH);
+  JSpec.exec(process.env.TM_FILEPATH);
   JSpec.run({ formatter: JSpec.formatters.Console, failuresOnly: true });
   JSpec.report();
 
 } else {
   var spawn = require('child_process').spawn;
-  var script = spawn("node", [process.ENV.TM_FILEPATH]);
+  var script = spawn("node", [process.env.TM_FILEPATH]);
   script.stdout.on("data", function(data) {
-    if (data !== null) { sys.puts(data); }
+    if (data !== null) { util.puts(data); }
   });
   script.stderr.on("data", function(data) {
-    if (data !== null) { sys.puts("ERROR: " + data); }
+    if (data !== null) { util.puts("ERROR: " + data); }
   });
 }
 </string>
